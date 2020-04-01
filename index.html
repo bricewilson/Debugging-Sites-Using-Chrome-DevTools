@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Welcome to Bethany's Pie Shop!</title>
+    <meta name="author" content="Bethany's Pie Shop">
+    <meta name="description" content="Store front for Bethany's Pie Shop">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        body {
+            margin-top: 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #e6e4d9;
+            background-image: url('images/pattern.png');
+        }
+
+        #mainheader {
+            background-color: #a593c2;
+        }
+
+        nav {
+            height: 60px;
+            width: 1000px;
+            margin: 0 auto 20px;
+        }
+
+        nav>ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav>ul>li {
+            float: left;
+        }
+
+        nav>ul>li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #leftmenu {
+            float: left;
+            width: 30%;
+            margin-bottom: 20px;
+        }
+
+        #main {
+            float: right;
+            width: 70%;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            clear: both;
+            width: 100%;
+        }
+
+        .searchbox {
+            padding: 5px;
+            margin: 10px 10px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="mainheader">
+        <nav>
+            <ul>
+                <li><img src="images/cake.svg" height="55" /></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pieoverview.html">All pies</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div style="width:1000px;margin-left: auto;margin-right: auto;">
+        <aside id="leftmenu">
+            <a href="index.html"><img src="images/bethanylogo.png" /></a>
+
+            <header>
+                <h4 style="text-align: center;">Browse our pies</h4>
+            </header>
+            <ul>
+                <li><a href="pieoverview.html">All pies</a></li>
+                <li><a href="cheesecakes.html">Cheese cakes</a></li>
+                <li><a href="fruitpies.html">Fruit pies</a></li>
+                <li><a href="seasonalpies.html">Seasonal pies</a></li>
+                <li><a href="#promos">Promotions</a></li>
+            </ul>
+            
+            <input type="search" class="searchbox" placeholder="Search our store" />
+        </aside>
+        <main id="main">
+            <article>
+                <header>
+                    <h1 style="font-size:35px;color:#a593c2">Welcome to Bethany's Pie Shop</h1>
+                </header>
+                <figure>
+                    <img src="images/bethany-fullsize.jpg" width="600" alt="Bethany in her pie shop" />
+                    <figcaption>Bethany in her pie shop</figcaption>
+                </figure>
+                <!-- <picture>
+                    <source media="(min-width: 650px)" srcset="images/bethany.jpg" width="600">
+                    <source media="(min-width: 465px)" srcset="images/bethanysmall.jpg" width="350">
+                    <img src="images/bethany.jpg" alt="Bethany in her pie shop" style="width:auto;">
+                  </picture> -->
+                <!-- <img src="images/bethany.jpg" width="700" /> -->
+                <h2>Our history</h2>
+                <p>For many years, <b>Bethany</b> has been baking the most delicious pies at her home. In 2013, we
+                    opened
+                    our first store
+                    in Brussels (Belgium) in a cosy little street near the Grand Market. People from all over the world
+                    fell
+                    in love
+                    with the soft cakes, heavenly cheese cakes, spicy apple pies...<i><br>The store became a success in
+                        no time.</i>
+                </p>
+                <p>
+
+                    In 2015, no less than 100 pies were sold every day and Bethany's Pie Shop moved into a larger
+                    building.
+                    After receiving many requests, it became clear that our next step was making it possible to order
+                    pies from the comfort of your own home and from anywhere in the world. You are now looking at the
+                    result of this:
+                    our very own webstore, making it possible to order Bethany's delicious pies whenever you feel like
+                    it!
+                </p>
+                <p>Download our full <a href="downloads/PriceList.zip">price list</a></p>
+            </article>
+
+            <section id="promos">
+                <h3 style="font-family:verdana;">Our weekly promotions</h3>
+                <h4>Cheese cake</h4>
+                $12.95 - serves 4<br>
+                <!-- <img src="https://gillcleerenpluralsight.blob.core.windows.net/files/cheesecake.jpg" width="500"
+                    alt="Cheese cak with strawberry" height="300" /> -->
+                <img src="images/products/cheesecakesmall.jpg" alt="Cheese cak with strawberry" />
+            </section>
+        </main>
+
+        <footer>
+            <p>Our address is <address>Bethany's Pie Shop - Bakery Street 555 Brussels Belgium</address></p>
+            <p><small>&copy; 2020 Bethany's Pie Shop - All rights reserved</small></p>
+            <p>Contact us via <a href="mailto:info@bethanyspieshop.com">email</a></p>
+            <p><small><a href="https://www.snowball.be">Created by Snowball</a></small></p>
+        </footer>
+    </div>
+</body>
+
+</html>
