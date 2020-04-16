@@ -1,0 +1,16 @@
+[
+  {
+      "pieID": 1,
+      "name": "Cheese cake",
+      "description": "Plain cheese cake. Plain pleasure.",
+      "imageURL": "images/products/cheesecakesmall.jpg",
+      "price": 12.95
+  },
+  {
+    "pieID": 2,
+    "name": "Apple pie",
+    "description": "Our famous apple pie",
+    "imageURL": "images/products/applepiesmall.jpg",
+    "price": 14.95
+  }
+]

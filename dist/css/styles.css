@@ -4,7 +4,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-color: #e6e4d9;
-    background-image: url('images/pattern.png');
+    background-image: url('../images/pattern.png');
 }
 
 #mainheader {
@@ -58,4 +58,14 @@ footer {
     padding: 5px;
     margin: 10px 10px;
     width: 200px;
+}
+
+h2,
+h3 {
+    color: #a593c2;
+}
+
+th,
+td {
+    padding: 5px;
 }
