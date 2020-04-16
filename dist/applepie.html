@@ -9,21 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="favicon.png">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/main.js"></script>
     <script>
-        function save() {
-            localStorage.setItem("applepie", true);
-        }
-
         window.onload = function(){
-            var favorite = document.getElementById('favorite');
-            if(window.localStorage)
-            {
-                var storage = window.localStorage;
-                if(storage.getItem('applepie'))
-                {
-                    favorite.innerHTML = "Apple pie is one of your favorites";
-                }
-            }
+          let favoritePie = getFavoritePie();
+          favorite.innerHTML = "Favorite: " + favoritePie;
         }
     </script>
 </head>
@@ -64,7 +54,7 @@
                             alt="Apple pie" /></a>
                     <figcaption>Our world-famous apple pie</figcaption>
                 </figure>
-                <button onclick="save()" type="button">Save as favorite</button>
+                <button onclick="saveFavorite('Apple pie')" type="button">Save as favorite</button>
                 <span id="favorite"></span>
                 <div style="background-color:#f8f4f1;">
                     <strong>Price: $12.95</strong>

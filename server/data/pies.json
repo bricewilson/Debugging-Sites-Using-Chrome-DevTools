@@ -1,16 +1,79 @@
 [
   {
-      "pieID": 1,
-      "name": "Cheese cake",
-      "description": "Plain cheese cake. Plain pleasure.",
-      "imageURL": "images/products/cheesecakesmall.jpg",
-      "price": 12.95
+    "pieID": 1,
+    "name": "Peach pie",
+    "description": "Chilton County peaches!",
+    "imageURL": "images/products/peachpiesmall.jpg",
+    "price": 18.95
   },
   {
     "pieID": 2,
     "name": "Apple pie",
-    "description": "Our famous apple pie",
+    "description": "John Appleseed loves it!",
     "imageURL": "images/products/applepiesmall.jpg",
     "price": 14.95
+  },
+  {
+    "pieID": 3,
+    "name": "Cranberry pie",
+    "description": "Lots of sugar in this one.",
+    "imageURL": "images/products/cranberrypiesmall.jpg",
+    "price": 18.95
+  },
+  {
+    "pieID": 4,
+    "name": "Cherry pie",
+    "description": "Made with canned cherries. Yum!",
+    "imageURL": "images/products/cherrypiesmall.jpg",
+    "price": 18.95
+  },
+  {
+    "pieID": 5,
+    "name": "Cheese cake",
+    "description": "Plain cheese cake. Meh.",
+    "imageURL": "images/products/cheesecakesmall.jpg",
+    "price": 12.95
+},
+  {
+    "pieID": 6,
+    "name": "Pumpkin pie",
+    "description": "Simple and delicious.",
+    "imageURL": "images/products/pumpkinpiesmall.jpg",
+    "price": 18.95
+  },
+  {
+    "pieID": 7,
+    "name": "Christmas apple pie",
+    "description": "A pricey holiday treat.",
+    "imageURL": "images/products/christmasapplepiesmall.jpg",
+    "price": 29.95
+  },
+  {
+    "pieID": 8,
+    "name": "Blueberry cheese cake",
+    "description": "Better than the plain one!",
+    "imageURL": "images/products/blueberrycheesecakesmall.jpg",
+    "price": 17.95
+  },
+  {
+    "pieID": 9,
+    "name": "Rhubarb Pie",
+    "description": "Tastes like chicken.",
+    "imageURL": "images/products/rhubarbpiesmall.jpg",
+    "price": 17.95
+  },
+  {
+    "pieID": 10,
+    "name": "Strawberry Pie",
+    "description": "Lots of berries. No straws.",
+    "imageURL": "images/products/strawberrypiesmall.jpg",
+    "price": 18.95
+  },
+  {
+    "pieID": 11,
+    "name": "Strawberry Cheese Cake",
+    "description": "Also better than plain!",
+    "imageURL": "images/products/strawberrycheesecakesmall.jpg",
+    "price": 21.95
   }
 ]
