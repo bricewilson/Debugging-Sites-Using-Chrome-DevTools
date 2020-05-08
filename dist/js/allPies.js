@@ -1,5 +1,6 @@
 window.onload = function() {
   loadAllPies();
+  loadNutritionInfo();
 }
 
 function loadAllPies() {
@@ -26,4 +27,16 @@ function loadAllPies() {
 
     pieTable.innerHTML = pieMarkup;
   });
+}
+
+function loadNutritionInfo() {
+  
+  console.info('Attempting to retrieve the nutritional information from the server.');
+
+  fetch('/api/nutrition')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(err => console.error('There was a problem retrieving the nutritional information.'));
+
+  console.warn('Eating too much pie is not good for!');
 }
