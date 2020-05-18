@@ -48,5 +48,5 @@ function loadNutritionInfo() {
   .then(data => console.log(data))
   .catch(err => console.error('There was a problem retrieving the nutritional information.'));
 
-  console.warn('Eating too much pie is not good for!');
+  console.warn('Eating too much pie is not good for you!');
 }
