@@ -1,6 +1,37 @@
 window.onload = function() {
   loadAllPies();
+  setSeasonalLink();
+  setFavorite();
   // loadNutritionInfo();
+}
+
+
+function setSeasonalLink() {
+
+  let seasonalElement = document.getElementById('seasonal');
+
+  let fresh = isFreshPieSeason();
+  //let fresh = false;
+
+  if(fresh) {
+    seasonalElement.innerText = 'Fresh Seasonal Pies';
+  }
+  else {
+    seasonalElement.innerText = 'Frozen Pies';
+  }
+  
+}
+
+function isFreshPieSeason() {
+  let currentMonth = new Date().getMonth();
+  console.log(currentMonth);
+
+  if(currentMonth >= 10 || currentMonth <= 4) {
+    return true; // October-April
+  }
+  else {
+    return false; // May-September
+  }
 }
 
 function loadAllPies() {
@@ -24,7 +55,7 @@ function loadAllPies() {
     data.forEach(element => {
       pieMarkup += `
         <tr>
-          <td><img src=${element.imageURL} width="100"></td>
+          <td><img src=${element.imageURL} width="100" onclick="setFavorite('${element.name}')"></td>
           <td>${element.name}</td>
           <td>${element.description}</td>
           <td>${element.price}</td>
@@ -37,6 +68,21 @@ function loadAllPies() {
 
     // console.trace();
   });
+}
+
+function setFavorite(newFavorite) {
+
+  if(newFavorite) {
+    saveFavorite(newFavorite);
+  }
+  else {
+    newFavorite = getFavoritePie();
+  }
+
+  let favoriteElement = document.getElementById('favorite');
+
+  favoriteElement.innerText = newFavorite;
+
 }
 
 function loadNutritionInfo() {
