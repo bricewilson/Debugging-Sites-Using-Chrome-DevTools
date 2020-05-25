@@ -24,7 +24,7 @@ function isFreshPieSeason() {
 
   let currentMonth = new Date().getMonth();
 
-  if(currentMonth >= 10 || currentMonth <= 4) {
+  if(currentMonth >= 9 || currentMonth <= 3) {
     return true; // October-April
   }
   else {
